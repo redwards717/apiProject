@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="mapProject.css" rel="stylesheet">
+    <title>Google Maps API</title>
+</head>
+<body>
+    <div class="wrapper">
+    <!-- <h2>Double click a bomb and click on the map to see its destructive force</h2> -->
+    <div id="bombDescription"><span>Click on a bomb to select it, then click on the map to see its destructive force</span></div>
+    <div class="buttonField">
+            <div type="button" class ="bombBtn" onclick="selectLittleBoy()">
+                <button class='littleBoyBtn'>Little Boy</button>         
+            </div>
+            <div type="button" class= "bombBtn" onclick="selectTsarBomba()">
+                <button class='tsarBombaBtn'>Tsar Bomba</button>              
+            </div>
+            <div type="button" class= "bombBtn" onclick="selectCastleBravo()">
+                    <button class='castleBravoBtn'>Castle Bravo</button>              
+            </div>
+            <div type="button" class = "bombBtn" onclick="selectNorthKorea()">
+                    <button class='northkoreaBtn'>North Korean Bomb</button>              
+            </div>
+            <div type="button" class = "bombBtn" onclick="selectShakti()">
+                    <button class='shaktiBtn'>Shakti I</button>              
+            </div>
+            <div type="button" class = "bombBtn" onclick="selectFatMan()">
+                    <button class='fatManBtn'>Fat Man</button>              
+            </div>
+            <div type="button" class = "bombBtn" onclick="selectKanyon()">
+                <button class='KanyonBtn'>Kanyon</button> 
+            </div>
+            <div id="clearMap" onclick="clearMap()" type="button"><button>Clear Map</button></div>
+    </div>
+    
+          
+    <div id="map_canvas"></div>
+    <div class='legend'>
+        <div class='redLegend'></div>
+        <div class='orangeLegend'></div>
+        <p>Total Destruction</p>
+        <p>Visible Damage</p>
+    </div>
+    </div>
+    <script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyDiFPgxpAXWEeLAyujbXsIhKQKSPkTo4uY"></script>
+    <script type="text/javascript" src="mapProject.js"></script>
+</body>
+</html>
